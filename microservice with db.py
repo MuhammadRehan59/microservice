@@ -1,7 +1,7 @@
 from flask import Flask, jsonify
 from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///your_database_file.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database_file.db'
 db = SQLAlchemy(app)
 class Pizza(db.Model):
     id = db.Column(db.Integer, primary_key=True)
